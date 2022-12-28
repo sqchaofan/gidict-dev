@@ -1,0 +1,111 @@
+$text-color: #ECE4D9;
+$bg-color: #312B47;
+$widthList:(
+    sm: 576px
+);
+
+body {
+    font-family: 'Noto Sans JP', Helvetica, Arial, sans-serif;
+}
+
+html{
+    background-color: $bg-color;
+    color: $text-color;
+}
+td, tr{
+    color: $text-color;
+}
+.form-control::placeholder {
+    color: #aaa;
+}
+
+.form-control, .form-select{
+    background-color: #e7e7e7;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    &:focus{
+        outline: none;
+        box-shadow: inset 0px -1px $bg-color;
+        border: 1px solid $bg-color;
+    }
+}
+
+@mixin form-v-group-notlast($minWidth: 0px){
+    @media screen and (min-width: $minWidth) {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        margin: -1px 0px 0px;
+    }
+}
+@mixin form-v-group-notfirst($minWidth: 0px){
+    @media screen and (min-width: $minWidth) {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
+
+@each $key, $value in $widthList{
+    .form-v-group-#{$key}>*:not(:first-child){
+        & .form-control,& .form-select{
+            @include form-v-group-notlast($value);
+        }
+    }
+    .form-v-group-#{$key}>*:not(:last-child){
+        & .form-control,& .form-select{
+            @include form-v-group-notfirst($value);
+        }
+    }
+}
+
+.form-v-group>*:not(:first-child){
+    & .form-control,& .form-select{
+        @include form-v-group-notlast(0px);
+    }
+}
+.form-v-group>*:not(:last-child){
+    & .form-control,& .form-select{
+        @include form-v-group-notfirst(0px);
+    }
+}
+
+.btn{
+    border-radius: 9px;
+    &:focus{
+        outline: none;
+        box-shadow: none;
+        border: none;
+    }
+}
+
+.btnx-blue{
+    color: $text-color;
+    background-color: #076678;
+    border: 1px solid $bg-color;
+    &:hover{
+      background-color:#458588;
+      color: $text-color;
+    }
+    &:focus{
+        border: 1px solid #e7e7e7;
+    }
+}
+.btnx-tab{
+    color: $text-color;
+    border: 0px solid $text-color;
+    border-radius: 0rem;
+    &:hover{
+      background-color: $bg-color;
+      color: $text-color;
+    }
+}
+.btnx-menu{
+    margin: 0px 0px 6px;
+    color: $text-color;
+    background-color: $bg-color;
+    border: 0px solid $text-color;
+    border-radius: 9px;
+    &:hover{
+      background-color: #757184;
+      color: $text-color;
+    }
+}

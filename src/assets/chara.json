@@ -1,0 +1,1040 @@
+[
+    {
+        "id": "0000",
+        "name": "ジン",
+        "name_en": "Jean",
+        "name_img": "Jean",
+        "weapon": "片手剣",
+        "element_en": "anemo",
+        "country": "モンド",
+        "materials":[
+            "104154",
+            "113001",
+            "100057",
+            "112007",
+            "104306",
+            "113003"
+        ],
+        "birthday": "3月14日"
+    },{
+        "id":"0001",
+        "name":"モナ",
+        "name_en": "Mona",
+        "name_img": "Mona",
+        "weapon": "法器",
+        "element_en": "hydro",
+        "country": "モンド",
+        "materials":[
+            "104124",
+            "113012",
+            "100025",
+            "112040",
+            "104306",
+            "113007"
+        ],
+        "birthday": "8月31日"
+    },{
+        "id":"0002",
+        "name":"ディルック",
+        "name_en": "Diluc",
+        "name_img": "Diluc",
+        "weapon": "両手剣",
+        "element_en": "pyro",
+        "country": "モンド",
+        "materials":[
+            "104114",
+            "113011",
+            "100055",
+            "112034",
+            "104306",
+            "113003"
+        ],
+        "birthday": "4月30日"
+    },{
+        "id": "0003",
+        "name": "アンバー",
+        "name_en": "Amber",
+        "name_img": "Amber",
+        "weapon": "弓",
+        "element_en": "pyro",
+        "country": "モンド",
+        "materials":[
+            "104114",
+            "113011",
+            "100055",
+            "112013",
+            "104303",
+            "113005"
+        ],
+        "birthday": "8月10日"
+    },{
+        "id": "0004",
+        "name": "リサ",
+        "name_en": "Lisa",
+        "name_img": "Lisa",
+        "weapon": "法器",
+        "element_en": "electro",
+        "country": "モンド",
+        "materials":[
+            "104144",
+            "113002",
+            "100022",
+            "112004",
+            "104309",
+            "113004"
+        ],
+        "birthday": "6月9日"
+    },{
+        "id": "0005",
+        "name": "ガイア",
+        "name_en": "Kaeya",
+        "name_img": "Kaeya",
+        "weapon": "片手剣",
+        "element_en": "cryo",
+        "country": "モンド",
+        "materials":[
+            "104164",
+            "113010",
+            "100056",
+            "112037",
+            "104309",
+            "113008"
+        ],
+        "birthday": "11月30日"
+    },{
+        "id": "0006",
+        "name": "バーバラ",
+        "name_en": "Barbara",
+        "name_img": "Barbara",
+        "weapon": "法器",
+        "element_en": "cryo",
+        "country": "モンド",
+        "materials":[
+            "104124",
+            "113012",
+            "100025",
+            "112010",
+            "104303",
+            "113007"
+        ],
+        "birthday": "7月5日"
+    },{
+        "id": "0007",
+        "name": "レザー",
+        "name_en": "Razor",
+        "name_img": "Razor",
+        "weapon": "両手剣",
+        "element_en": "electro",
+        "country": "モンド",
+        "materials":[
+            "104144",
+            "113002",
+            "100021",
+            "112007",
+            "104306",
+            "113004"
+        ],
+        "birthday": "9月9日"
+    },{
+        "id": "0008",
+        "name": "ベネット",
+        "name_en": "Bennett",
+        "name_img": "Bennett",
+        "weapon": "片手剣",
+        "element_en": "pyro",
+        "country": "モンド",
+        "materials":[
+            "104114",
+            "113011",
+            "100024",
+            "112037",
+            "104306",
+            "113003"
+        ],
+        "birthday": "2月29日"
+    },{
+        "id": "0009",
+        "name": "ノエル",
+        "name_en": "Noelle",
+        "name_img": "Noelle",
+        "weapon": "両手剣",
+        "element_en": "geo",
+        "country": "モンド",
+        "materials":[
+            "104174",
+            "113009",
+            "100022",
+            "112007",
+            "104306",
+            "113004"
+        ],
+        "birthday": "3月21日"
+    },{
+        "id": "0010",
+        "name": "フィッシュル",
+        "name_en": "Fischl",
+        "name_img": "Fischl",
+        "weapon": "弓",
+        "element_en": "electro",
+        "country": "モンド",
+        "materials":[
+            "104144",
+            "113002",
+            "100055",
+            "112013",
+            "104309",
+            "113008"
+        ],
+        "birthday": "5月27日"
+    },{
+        "id": "0011",
+        "name": "スクロース",
+        "name_en": "Sucrose",
+        "name_img": "Sucrose",
+        "weapon": "法器",
+        "element_en": "anemo",
+        "country": "モンド",
+        "materials":[
+            "104154",
+            "113001",
+            "100024",
+            "112040",
+            "104303",
+            "113008"
+        ],
+        "birthday": "11月26日"
+    },{
+        "id": "0012",
+        "name": "ウェンティ",
+        "name_en": "Venti",
+        "name_img": "Venti",
+        "weapon": "弓",
+        "element_en": "anemo",
+        "country": "モンド",
+        "materials":[
+            "104154",
+            "113001",
+            "100023",
+            "112004",
+            "104309",
+            "113006"
+        ],
+        "birthday": "6月16日"
+    },{
+        "id": "0013",
+        "name": "クレー",
+        "name_en": "Klee",
+        "name_img": "Klee",
+        "weapon": "法器",
+        "element_en": "pyro",
+        "country": "モンド",
+        "materials":[
+            "104114",
+            "113011",
+            "100025",
+            "112010",
+            "104303",
+            "113007"
+        ],
+        "birthday": "7月27日"
+    },{
+        "id": "0014",
+        "name": "ディオナ",
+        "name_en": "Diona",
+        "name_img": "Diona",
+        "weapon": "弓",
+        "element_en": "cryo",
+        "country": "モンド",
+        "materials":[
+            "104164",
+            "113010",
+            "100056",
+            "112013",
+            "104303",
+            "113014"
+        ],
+        "birthday": "1月18日"
+    },{
+        "id": "0015",
+        "name": "アルベド",
+        "name_en": "Albedo",
+        "name_img": "Albedo",
+        "weapon": "片手剣",
+        "element_en": "geo",
+        "country": "モンド",
+        "materials":[
+            "104174",
+            "113009",
+            "100023",
+            "112010",
+            "104309",
+            "113013"
+        ],
+        "birthday": "9月13日"
+    },{
+        "id": "0016",
+        "name": "ロサリア",
+        "name_en": "Rosaria",
+        "name_img": "Rosaria",
+        "weapon": "長柄武器",
+        "element_en": "cryo",
+        "country": "モンド",
+        "materials":[
+            "104164",
+            "113010",
+            "100022",
+            "112034",
+            "104309",
+            "113015"
+        ],
+        "birthday": "1月24日"
+    },{
+        "id": "0017",
+        "name": "エウルア",
+        "name_en": "Eula",
+        "name_img": "Eula",
+        "weapon": "両手剣",
+        "element_en": "cryo",
+        "country": "モンド",
+        "materials":[
+            "104164",
+            "113020",
+            "100057",
+            "112007",
+            "104306",
+            "113017"
+        ],
+        "birthday": "10月25日"
+    },{
+        "id": "1000",
+        "name": "七七",
+        "name_en": "Qiqi",
+        "name_img": "Qiqi",
+        "weapon": "片手剣",
+        "element_en": "cryo",
+        "country": "璃月",
+        "birthday": "3月3日",
+        "materials":[
+            "104164",
+            "113010",
+            "100034",
+            "112010",
+            "104312",
+            "113006"
+        ]
+    },{
+        "id": "1001",
+        "name": "刻晴",
+        "name_en": "Keqing",
+        "name_img": "Keqing",
+        "weapon": "片手剣",
+        "element_en": "electro",
+        "country": "璃月",
+        "birthday": "11月20日",
+        "materials":[
+            "104144",
+            "113002",
+            "100058",
+            "112040",
+            "104312",
+            "113007"
+        ]
+    },{
+        "id": "1002",
+        "name": "北斗",
+        "name_en": "Beidou",
+        "name_img": "Beidou",
+        "weapon": "両手剣",
+        "element_en": "anemo",
+        "country": "璃月",
+        "birthday": "2月14日",
+        "materials":[
+            "104144",
+            "113002",
+            "100058",
+            "112040",
+            "104312",
+            "113007"
+        ]
+    },{
+        "id": "1003",
+        "name": "凝光",
+        "name_en": "Ningguang",
+        "name_img": "Ningguang",
+        "weapon": "法器",
+        "element_en": "geo",
+        "country": "璃月",
+        "birthday": "8月26日",
+        "materials":[
+            "104174",
+            "113009",
+            "100030",
+            "112034",
+            "104312",
+            "113008"
+        ]
+    },{
+        "id": "1004",
+        "name": "香菱",
+        "name_en": "Xiangling",
+        "name_img": "Xiangling",
+        "weapon": "長柄武器",
+        "element_en": "pyro",
+        "country": "璃月",
+        "birthday": "11月2日",
+        "materials":[
+            "104114",
+            "113011",
+            "100027",
+            "112004",
+            "104315",
+            "113004"
+        ]
+    },{
+        "id": "1005",
+        "name": "行秋",
+        "name_en": "Xingqiu",
+        "name_img": "Xingqiu",
+        "weapon": "片手剣",
+        "element_en": "hydro",
+        "country": "璃月",
+        "birthday": "10月9日",
+        "materials":[
+            "104124",
+            "113012",
+            "100029",
+            "112007",
+            "104318",
+            "113006"
+        ]
+    },{
+        "id": "1006",
+        "name": "重雲",
+        "name_en": "Chongyun",
+        "name_img": "Chongyun",
+        "weapon": "両手剣",
+        "element_en": "cryo",
+        "country": "璃月",
+        "birthday": "9月7日",
+        "materials":[
+            "104164",
+            "113010",
+            "100058",
+            "112007",
+            "104315",
+            "113005"
+        ]
+    },{
+        "id": "1007",
+        "name": "鍾離",
+        "name_en": "Zhongli",
+        "name_img": "Zhongli",
+        "weapon": "長柄武器",
+        "element_en": "geo",
+        "country": "璃月",
+        "birthday": "12月31日",
+        "materials":[
+            "104174",
+            "113009",
+            "100058",
+            "112004",
+            "104318",
+            "113013"
+        ]
+    },{
+        "id": "1008",
+        "name": "辛炎",
+        "name_en": "Xinyan",
+        "name_img": "Xinyan",
+        "weapon": "両手剣",
+        "element_en": "pyro",
+        "country": "璃月",
+        "birthday": "10月16日",
+        "materials":[
+            "104114",
+            "113011",
+            "100034",
+            "112037",
+            "104318",
+            "113013"
+        ]
+    },{
+        "id": "1009",
+        "name": "甘雨",
+        "name_en": "Ganyu",
+        "name_img": "Ganyu",
+        "weapon": "弓",
+        "element_en": "cryo",
+        "country": "璃月",
+        "birthday": "12月2日",
+        "materials":[
+            "104164",
+            "113010",
+            "100031",
+            "112040",
+            "104315",
+            "113015"
+        ]
+    },{
+        "id": "1010",
+        "name": "魈",
+        "name_en": "Xiao",
+        "name_img": "Xiao",
+        "weapon": "長柄武器",
+        "element_en": "anemo",
+        "country": "璃月",
+        "birthday": "4月17日",
+        "materials":[
+            "104154",
+            "113016",
+            "100031",
+            "112004",
+            "104312",
+            "113015"
+        ]
+    },{
+        "id": "1011",
+        "name": "胡桃",
+        "name_en": "Hu Tao",
+        "name_img": "Hutao",
+        "weapon": "長柄武器",
+        "element_en": "pyro",
+        "country": "璃月",
+        "birthday": "7月15日",
+        "materials":[
+            "104114",
+            "113016",
+            "100029",
+            "112040",
+            "104315",
+            "113014"
+        ]
+    },{
+        "id": "1012",
+        "name": "煙緋",
+        "name_en": "Yanfei",
+        "name_img": "Yanfei",
+        "weapon": "法器",
+        "element_en": "pyro",
+        "country": "璃月",
+        "birthday": "",
+        "materials":[
+            "104114",
+            "113016",
+            "100028",
+            "112037",
+            "104318",
+            "113018"
+        ]
+    },{
+        "id": "1013",
+        "name": "申鶴",
+        "name_en": "Shenhe",
+        "name_img": "Shenhe",
+        "weapon": "長柄武器",
+        "element_en": "cryo",
+        "country": "璃月",
+        "birthday": "3月10日",
+        "materials":[
+            "104164",
+            "113031",
+            "100031",
+            "112040",
+            "104312",
+            "113026"
+        ]
+    },{
+        "id": "1014",
+        "name": "雲菫",
+        "name_en": "Yun Jin",
+        "name_img": "Yunjin",
+        "weapon": "長柄武器",
+        "element_en": "geo",
+        "country": "璃月",
+        "birthday": "5月21日",
+        "materials":[
+            "104174",
+            "113030",
+            "100030",
+            "112007",
+            "104315",
+            "113027"
+        ]
+    },{
+        "id": "1015",
+        "name": "夜蘭",
+        "name_en": "Yelan",
+        "name_img": "Yelan",
+        "weapon": "弓",
+        "element_en": "hydro",
+        "country": "璃月",
+        "birthday": "4月20日",
+        "materials":[
+            "104124",
+            "113035",
+            "100033",
+            "112034",
+            "104312",
+            "113019"
+        ]
+    },{
+        "id": "2000",
+        "name": "楓原万葉",
+        "name_en": "Kaedehara Kazuha",
+        "name_img": "Kazuha",
+        "weapon": "片手剣",
+        "element_en": "anemo",
+        "country": "稲妻",
+        "birthday": "10月29日",
+        "materials":[
+            "104154",
+            "113022",
+            "101206",
+            "112037",
+            "104315",
+            "113019"
+        ]
+    },{
+        "id": "2001",
+        "name": "神里綾華",
+        "name_en": "Kamisato Ayaka",
+        "name_img": "Ayaka",
+        "weapon": "片手剣",
+        "element_en": "cryo",
+        "country": "稲妻",
+        "birthday": "9月28日",
+        "materials":[
+            "104164",
+            "113023",
+            "101202",
+            "112046",
+            "104325",
+            "113018"
+        ]
+    },{
+        "id": "2002",
+        "name": "宵宮",
+        "name_en": "Yoimiya",
+        "name_img": "Yoimiya",
+        "weapon": "弓",
+        "element_en": "pyro",
+        "country": "稲妻",
+        "birthday": "6月21日",
+        "materials":[
+            "104114",
+            "113024",
+            "101205",
+            "112010",
+            "104322",
+            "113017"
+        ]
+    },{
+        "id": "2003",
+        "name": "早柚",
+        "name_en": "Sayu",
+        "name_img": "Sayu",
+        "weapon": "両手剣",
+        "element_en": "anemo",
+        "country": "稲妻",
+        "birthday": "10月19日",
+        "materials":[
+            "104154",
+            "113022",
+            "101203",
+            "112040",
+            "104328",
+            "113019"
+        ]
+    },{
+        "id": "2004",
+        "name": "雷電将軍",
+        "name_en": "Raiden Shogun",
+        "name_img": "Shogun",
+        "weapon": "長柄武器",
+        "element_en": "electro",
+        "country": "稲妻",
+        "birthday": "6月26日",
+        "materials":[
+            "104144",
+            "113029",
+            "101208",
+            "112046",
+            "104328",
+            "113025"
+        ]
+    },{
+        "id": "2005",
+        "name": "九条裟羅",
+        "name_en": "Kujou Sara",
+        "name_img": "Sara",
+        "weapon": "弓",
+        "element_en": "electro",
+        "country": "稲妻",
+        "birthday": "7月14日",
+        "materials":[
+            "104144",
+            "113029",
+            "101204",
+            "112007",
+            "104325",
+            "113027"
+        ]
+    },{
+        "id": "2006",
+        "name": "珊瑚宮心海",
+        "name_en": "Sangonomiya Kokomi",
+        "name_img": "Kokomi",
+        "weapon": "法器",
+        "element_en": "hydro",
+        "country": "稲妻",
+        "birthday": "2月22日",
+        "materials":[
+            "104124",
+            "113028",
+            "101207",
+            "112055",
+            "104322",
+            "113026"
+        ]
+    },{
+        "id": "2007",
+        "name": "トーマ",
+        "name_en": "Tohma",
+        "name_img": "Tohma",
+        "weapon": "長柄武器",
+        "element_en": "pyro",
+        "country": "稲妻",
+        "birthday": "1月9日",
+        "materials":[
+            "104114",
+            "113024",
+            "101209",
+            "112037",
+            "104322",
+            "113026"
+        ]
+    },{
+        "id": "2008",
+        "name": "荒瀧一斗",
+        "name_en": "Arataki Itto",
+        "name_img": "Itto",
+        "weapon": "両手剣",
+        "element_en": "geo",
+        "country": "稲妻",
+        "birthday": "6月1日",
+        "materials":[
+            "104174",
+            "113030",
+            "101201",
+            "112004",
+            "104325",
+            "113027"
+        ]
+    },{
+        "id": "2009",
+        "name": "ゴロー",
+        "name_en": "Gorou",
+        "name_img": "Gorou",
+        "weapon": "弓",
+        "element_en": "geo",
+        "country": "稲妻",
+        "birthday": "5月18日",
+        "materials":[
+            "104174",
+            "113023",
+            "101207",
+            "112055",
+            "104328",
+            "113025"
+        ]
+    },{
+        "id": "2010",
+        "name": "八重神子",
+        "name_en": "Yae Miko",
+        "name_img": "Yae",
+        "weapon": "法器",
+        "element_en": "electro",
+        "country": "稲妻",
+        "birthday": "6月27日",
+        "materials":[
+            "104144",
+            "113031",
+            "101206",
+            "112046",
+            "104328",
+            "113034"
+        ]
+    },{
+        "id": "2011",
+        "name": "神里綾人",
+        "name_en": "Kamisato Ayato",
+        "name_img": "Ayato",
+        "weapon": "片手剣",
+        "element_en": "hydro",
+        "country": "稲妻",
+        "birthday": "3月26日",
+        "materials":[
+            "104124",
+            "113028",
+            "101202",
+            "112046",
+            "104325",
+            "113032"
+        ]
+    },{
+        "id": "2012",
+        "name": "久岐忍",
+        "name_en": "Kuki Shinobu",
+        "name_img": "Shinobu",
+        "weapon": "片手剣",
+        "element_en": "electro",
+        "country": "稲妻",
+        "birthday": "7月27日",
+        "materials":[
+            "104144",
+            "113035",
+            "101205",
+            "112055",
+            "104325",
+            "113033"
+        ]
+    },{
+        "id": "2013",
+        "name": "鹿野院平蔵",
+        "name_en": "Shikanoin Heizou",
+        "name_img": "Heizou",
+        "weapon": "法器",
+        "element_en": "anemo",
+        "country": "稲妻",
+        "birthday": "7月24日",
+        "materials":[
+            "104154",
+            "113035",
+            "101201",
+            "112037",
+            "104322",
+            "113034"
+        ]
+    },{
+        "id": "3000",
+        "name": "ティナリ",
+        "name_en": "Tighnari",
+        "name_img": "Tighnari",
+        "weapon": "弓",
+        "element_en": "dendro",
+        "country": "スメール",
+        "birthday": "12月29日",
+        "materials":[
+            "104134",
+            "113036",
+            "101215",
+            "112061",
+            "104331",
+            "113034"
+        ]
+    },{
+        "id": "3001",
+        "name": "コレイ",
+        "name_en": "Collei",
+        "name_img": "Collei",
+        "weapon": "弓",
+        "element_en": "dendro",
+        "country": "スメール",
+        "birthday": "5月8日",
+        "materials":[
+            "104134",
+            "113036",
+            "101213",
+            "112013",
+            "104337",
+            "113033"
+        ]
+    },{
+        "id": "3002",
+        "name": "ドリー",
+        "name_en": "Dori",
+        "name_img": "Dori",
+        "weapon": "両手剣",
+        "element_en": "electro",
+        "country": "スメール",
+        "birthday": "12月21日",
+        "materials":[
+            "104144",
+            "113037",
+            "101217",
+            "112067",
+            "104334",
+            "113018"
+        ]
+    },{
+        "id": "3003",
+        "name": "セノ",
+        "name_en": "Cyno",
+        "name_img": "Cyno",
+        "weapon": "長柄武器",
+        "element_en": "electro",
+        "country": "スメール",
+        "birthday": "6月23日",
+        "materials":[
+            "104144",
+            "113037",
+            "101225",
+            "112010",
+            "104331",
+            "113032"
+        ]
+    },{
+        "id": "3004",
+        "name": "キャンディス",
+        "name_en": "Candace",
+        "name_img": "Candace",
+        "weapon": "長柄武器",
+        "element_en": "hydro",
+        "country": "スメール",
+        "birthday": "5月3日",
+        "materials":[
+            "104124",
+            "113039",
+            "101220",
+            "112067",
+            "104331",
+            "113033"
+        ]
+    },{
+        "id": "3005",
+        "name": "ニィロウ",
+        "name_en": "Nilou",
+        "name_img": "Nilou",
+        "weapon": "片手剣",
+        "element_en": "hydro",
+        "country": "スメール",
+        "birthday": "12月3日",
+        "materials":[
+            "104124",
+            "113038",
+            "101214",
+            "112061",
+            "104337",
+            "113033"
+        ]
+    },{
+        "id": "3006",
+        "name": "ナヒーダ",
+        "name_en": "Nahida",
+        "name_img": "Nahida",
+        "weapon": "法器",
+        "element_en": "dendro",
+        "country": "スメール",
+        "birthday": "10月27日",
+        "materials":[
+            "104134",
+            "113040",
+            "101217",
+            "112061",
+            "104334",
+            "113041"
+        ]
+    },{
+        "id": "3007",
+        "name": "レイラ",
+        "name_en": "Layla",
+        "name_img": "Layla",
+        "weapon": "片手剣",
+        "element_en": "cryo",
+        "country": "スメール",
+        "birthday": "12月19日",
+        "materials":[
+            "104164",
+            "113038",
+            "101215",
+            "112010",
+            "104334",
+            "113042"
+        ]
+    },{
+        "id": "3008",
+        "name": "放浪者",
+        "name_en": "Wanderer",
+        "name_img": "Wanderer",
+        "weapon": "法器",
+        "element_en": "anemo",
+        "country": "スメール",
+        "birthday": "1月3日",
+        "materials":[
+            "104154",
+            "113038",
+            "101213",
+            "112046",
+            "104337",
+            "113043"
+        ]
+    },{
+        "id": "3009",
+        "name": "ファルザン",
+        "name_en": "Faruzan",
+        "name_img": "Faruzan",
+        "weapon": "弓",
+        "element_en": "anemo",
+        "country": "スメール",
+        "birthday": "8月20日",
+        "materials":[
+            "104154",
+            "113039",
+            "101220",
+            "112067",
+            "104331",
+            "113041"
+        ]
+    },{
+        "id": "6000",
+        "name": "タルタリヤ",
+        "name_en": "Tartaglia",
+        "name_img": "Tartaglia",
+        "weapon": "弓",
+        "element_en": "hydro",
+        "country": "スネージナヤ",
+        "birthday": "7月20日",
+        "materials":[
+            "104124",
+            "113012",
+            "100033",
+            "112034",
+            "104303",
+            "113014"
+        ]
+    },{
+        "id": "8000",
+        "name": "旅人",
+        "name_en": "Traveller",
+        "name_img": "PlayerGirl",
+        "weapon": "片手剣",
+        "element_en": "NoneAloy",
+        "country": "その他",
+        "birthday": "",
+        "materials":[
+            "104104",
+            "None",
+            "100024",
+            "112007",
+            "None",
+            "None"
+        ]
+    },{
+        "id": "8001",
+        "name": "アーロイ",
+        "name_en": "Aloy",
+        "name_img": "Aloy",
+        "weapon": "弓",
+        "element_en": "cryo",
+        "country": "その他",
+        "birthday": "",
+        "materials":[
+            "104164",
+            "113020",
+            "101203",
+            "112055",
+            "104303",
+            "113025"
+        ]
+    }
+]
