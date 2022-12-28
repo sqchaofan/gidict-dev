@@ -156,7 +156,7 @@ export default{
       <p>
         <div class="row row-cols-auto align-items-center">
             <div class="col">
-            <button @click="convert" class="btn btnx-blue">変換</button>
+            <button @click="convert" class="btn btnx-gv-blue">変換</button>
             </div>
             <div class="form-check col">
                 <input v-model="doAddComma" class="form-check-input" type="checkbox" value="" id="flexCheckDefault" :checked="doAddComma">

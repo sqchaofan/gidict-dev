@@ -26,4 +26,14 @@ export default defineConfig({
   },
   base: "./",
   publicDir: "public",
+  css: {
+    modules: {
+      scopeBehaviour: 'local',
+    },
+    preprocessorOptions:{
+      scss:{
+        additionalData: `@import "@/assets/var.scss";`,
+      }
+    }
+  }
 })

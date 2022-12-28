@@ -91,19 +91,17 @@ export default{
 </template>
 
 <style lang="scss">
-$text-color: #ECE4D9;
-$bg-color: #312B47;
 .header{
   padding: 6px 6px 6px;
-  background-color: #1C1827;
-  color:#ECE4D9;
-  box-shadow: inset 0px -6px #473E67;
+  background-color: $bg-strong-color;
+  color:$text-color;
+  box-shadow: inset 0px -6px $bg-light-color;
 }
 
 .mainpage{
   padding: 6px 0px;
   background-color: $bg-color;
-  color: #ECE4D9;
+  color: $text-color;
 }
 
 </style>
