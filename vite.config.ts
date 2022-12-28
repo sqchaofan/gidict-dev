@@ -23,5 +23,7 @@ export default defineConfig({
   },
   server: {
     host: true
-  }
+  },
+  base: "./",
+  publicDir: "public",
 })

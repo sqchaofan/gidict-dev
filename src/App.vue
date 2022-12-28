@@ -75,7 +75,7 @@ export default{
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuBtn">
             <li v-for="pg in pageall">
-              <a class="dropdown-item" @click="page=pg.name">{{pg.disp}}</a>
+              <div class="dropdown-item" @click="page=pg.name">{{pg.disp}}</div>
             </li>
           </ul>
         </div>
@@ -98,9 +98,6 @@ $bg-color: #312B47;
   background-color: #1C1827;
   color:#ECE4D9;
   box-shadow: inset 0px -6px #473E67;
-}
-.header-item{
-  padding: 0px;
 }
 
 .mainpage{

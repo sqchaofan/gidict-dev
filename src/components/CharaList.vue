@@ -1,4 +1,6 @@
 <script>
+import chrData from '@/assets/chara.json'
+
 export default{
     data(){
         return{
@@ -13,13 +15,8 @@ export default{
     },
     methods:{
         async fetchChrData() {
-            const fetchJson = async (URL)=>{
-                const res = await fetch(URL);
-                return res.json();
-            };
-            this.chr_data = await fetchJson("./src/assets/chara.json")
-            this.chr_data_filtered = this.chr_data
-            //console.log(this.chr_data.filter((t)=>t["name"] === "空"))
+            this.chr_data = chrData
+            this.chr_data_filtered = chrData
         },
         search(){
             this.searchtext = this.searchtext_tmp;
@@ -58,7 +55,7 @@ export default{
                 "104337":"水/土/日",
             };
             return idList[id];
-        }
+        },
     },
     mounted(){
         this.fetchChrData();
@@ -91,13 +88,13 @@ export default{
         <tbody>
             <tr v-for="chr in chr_data_filtered">
                 <td>
-                    <img :src="`./src/assets/imgs/chara/UI_AvatarIcon_${chr.name_img}.png`" :width="img_size" :height="img_size">
+                    <img :src="`/assets/imgs/chara/UI_AvatarIcon_${chr.name_img}.png`" :width="img_size" :height="img_size">
                 </td>
                 <td>
                     <div v-if="this.windowWidth>=992">
                         <div class="row align-items-center row-cols-auto g-1">
                             <div class="col p-0 m-0">
-                                <img :src="`./src/assets/imgs/other/${chr.element_en}.png`" :width="img_size_sm" :height="img_size_sm">
+                                <img :src="`/assets/imgs/other/${chr.element_en}.png`" :width="img_size_sm" :height="img_size_sm">
                             </div>
                             <div class="col px-1 chr_name">{{ chr.name }}</div>
                         </div>
@@ -106,7 +103,7 @@ export default{
                     <div v-else-if="this.windowWidth>=576">
                         <div class="row align-items-center row-cols-auto g-1">
                             <div class="col p-0 m-0">
-                                <img :src="`./src/assets/imgs/other/${chr.element_en}.png`" :width="img_size_sm" :height="img_size_sm">
+                                <img :src="`/assets/imgs/other/${chr.element_en}.png`" :width="img_size_sm" :height="img_size_sm">
                             </div>
                             <b class="col px-1">{{ chr.name }}</b>
                         </div>
@@ -114,7 +111,7 @@ export default{
                     </div>
                     <div v-else>
                         <div class="chr_name_sm">
-                            <img :src="`./src/assets/imgs/other/${chr.element_en}.png`" :width="img_size_sm" :height="img_size_sm">
+                            <img :src="`/assets/imgs/other/${chr.element_en}.png`" :width="img_size_sm" :height="img_size_sm">
                             <br><b>{{ chr.name }}</b>
                         </div>
                     </div>
@@ -126,10 +123,10 @@ export default{
                 <td>
                     <div class="row row-cols-auto">
                         <div v-for="(material,idx) in chr.materials" class="col px-0 px-xl-2">
-                            <img v-if="material==='None'" src="../assets/imgs/other/genshin_avatar_bg.png" :width="img_size" :height="img_size">
-                            <img v-else-if="idx!==4" :src="`./src/assets/imgs/material/UI_ItemIcon_${material}.png`" :width="img_size" :height="img_size">
+                            <img v-if="material==='None'" src="/assets/imgs/other/genshin_avatar_bg.png" :width="img_size" :height="img_size">
+                            <img v-else-if="idx!==4" :src="`/assets/imgs/material/UI_ItemIcon_${material}.png`" :width="img_size" :height="img_size">
                             <div v-else>
-                                <img :src="`./src/assets/imgs/material/UI_ItemIcon_${material}.png`" :width="img_size" :height="img_size">
+                                <img :src="`/assets/imgs/material/UI_ItemIcon_${material}.png`" :width="img_size" :height="img_size">
                                 <div class="talent_wday">{{ talentIdToWday(material) }}</div>
                             </div>
                         </div>

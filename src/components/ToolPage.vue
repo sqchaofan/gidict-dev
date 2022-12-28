@@ -1,4 +1,7 @@
 <script>
+import chrData from '@/assets/chara.json'
+import materialData from '@/assets/materialdict.json'
+
 export default{
     data(){
         return{
@@ -32,12 +35,8 @@ export default{
     },
     methods:{
         async fetchAll() {
-            const fetchJson = async (URL)=>{
-                const res = await fetch(URL);
-                return res.json();
-            };
-            this.materialDict = await fetchJson("./src/assets/materialdict.json");
-            this.chrDict = await fetchJson("./src/assets/chara.json");
+            this.materialDict = materialData;
+            this.chrDict = chrData;
             let previd = parseInt(this.chrDict[this.chrDict.length-1].id);
             this.selected.id=String(previd+1).padStart(4,'0');
         },
@@ -127,7 +126,7 @@ export default{
                     </select>
                 </div>
                 <div class="col">
-                    <img v-if="selected.element_en" :src="`./src/assets/imgs/other/${selected.element_en}.png`" height="31">
+                    <img v-if="selected.element_en" :src="`/assets/imgs/other/${selected.element_en}.png`" height="31">
                 </div>
             </div>
             <div class="row row-cols-auto align-items-center gx-0">
@@ -175,8 +174,5 @@ export default{
 <style>
 .aster{
     color: red;
-}
-.select-col{
-    width:8em;
 }
 </style>
