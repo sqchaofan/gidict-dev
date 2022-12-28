@@ -25,6 +25,7 @@ export default{
                 "璃月":{"name":"璃月", "checked": true},
                 "稲妻":{"name":"稲妻", "checked": true},
                 "稲妻":{"name":"稲妻", "checked": true},
+                "スメール":{"name":"スメール", "checked": true},
                 "ナタ":{"name":"ナタ", "checked": true},
                 "フォンテーヌ":{"name":"フォンテーヌ", "checked": true},
                 "スネージナヤ":{"name":"スネージナヤ", "checked": true},
