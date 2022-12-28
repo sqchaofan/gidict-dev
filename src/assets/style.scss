@@ -62,6 +62,24 @@ td, tr{
     }
 }
 
+.round-group-left{
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+.round-group-mid{border-radius: 0px !important;}
+.round-group-right{
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+.round-group-top{
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+.round-group-bottom{
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
 .btn{
     border-radius: 9px;
     &:focus{
@@ -130,6 +148,7 @@ td, tr{
 .modal-header{
     background-color: $bg-color;
     border-bottom-color: $bg_lighter-color;
+    box-shadow: inset 0px -6px $bg-lighter-color;
 }
 .modal-footer{
     border-top-color: $bg_lighter-color;

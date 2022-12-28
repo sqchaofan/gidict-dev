@@ -199,8 +199,8 @@ export default{
           <div id="filterCountry">
             <div class="row row-cols-auto align-items-center">
               <h6 class="col m-0">国</h6>
-              <button @click="checkAll(countries)" class="col btn btn-sm btnx-gv-blue py-0" style="font-size:12px;">全選択</button>
-              <button @click="uncheckAll(countries)" class="col btn btn-sm btnx-gv-red py-0" style="font-size:12px;">全解除</button>
+              <button @click="checkAll(countries)" class="col btn btn-sm btnx-gv-blue py-0 round-group-left" style="font-size:12px;">全選択</button>
+              <button @click="uncheckAll(countries)" class="col btn btn-sm btnx-gv-red py-0 round-group-right" style="font-size:12px;">全解除</button>
             </div>
             <div class="row row-cols-auto align-items-center gx-2 py-2">
               <div v-for="item,name,idx in countries" class="px-1">
@@ -213,8 +213,8 @@ export default{
           <div id="filterElement">
             <div class="row row-cols-auto align-items-center">
               <h6 class="col m-0">元素</h6>
-              <button @click="checkAll(elementals)" class="col btn btn-sm btnx-gv-blue py-0" style="font-size:12px;">全選択</button>
-              <button @click="uncheckAll(elementals)" class="col btn btn-sm btnx-gv-red py-0" style="font-size:12px;">全解除</button>
+              <button @click="checkAll(elementals)" class="col btn btn-sm btnx-gv-blue py-0 round-group-left" style="font-size:12px;">全選択</button>
+              <button @click="uncheckAll(elementals)" class="col btn btn-sm btnx-gv-red py-0 round-group-right" style="font-size:12px;">全解除</button>
             </div>
             <div class="row row-cols-auto align-items-center gx-2 py-2">
               <div v-for="item,name,idx in elementals" class="px-1">
@@ -227,8 +227,8 @@ export default{
           <div id="filterWeapon">
             <div class="row row-cols-auto align-items-center">
               <h6 class="col m-0">武器</h6>
-              <button @click="checkAll(weapons)" class="col btn btn-sm btnx-gv-blue py-0" style="font-size:12px;">全選択</button>
-              <button @click="uncheckAll(weapons)" class="col btn btn-sm btnx-gv-red py-0" style="font-size:12px;">全解除</button>
+              <button @click="checkAll(weapons)" class="col btn btn-sm btnx-gv-blue py-0 round-group-left" style="font-size:12px;">全選択</button>
+              <button @click="uncheckAll(weapons)" class="col btn btn-sm btnx-gv-red py-0 round-group-right" style="font-size:12px;">全解除</button>
             </div>
             <div class="row row-cols-auto align-items-center gx-2 py-2">
               <div v-for="item,name,idx in weapons" class="px-1">
