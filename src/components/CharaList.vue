@@ -2,6 +2,7 @@
 import chrData from '@/assets/chara.json'
 
 export default{
+    props: ['showWday'],
     data(){
         return{
             chr_data: chrData,
@@ -43,12 +44,12 @@ export default{
     methods:{
         resizeWindow () {
             this.windowWidth = window.innerWidth;
-            if(this.windowWidth<992){
+            if(this.windowWidth<768){
                 this.img_size=48;
                 this.img_size_sm=18;
             }else if(this.windowWidth<992){
-                this.img_size=70;
-                this.img_size_sm=18;
+                this.img_size=64;
+                this.img_size_sm=24;
             }else{
                 this.img_size=70;
                 this.img_size_sm=24;
@@ -111,9 +112,6 @@ export default{
 
 <template>
   <div class="container-xl position-relative">
-    <div v-if="showFilterWindow" class="position-absolute translate-middle">
-      hello
-    </div>
     <div class="row align-items-center gx-2">
       <div class="col-xs-12 col-sm-auto">
         <button type="button" class="btn btnx-gv-yellow" data-bs-toggle="modal" data-bs-target="#filterModal">
@@ -174,12 +172,12 @@ export default{
                 </td>
                 <td>
                   <div class="row row-cols-auto">
-                    <div v-for="(material,idx) in chr.materials" class="col px-0 px-xl-2">
+                    <div v-for="(material,idx) in chr.materials" class="col px-0 px-lg-2">
                       <img v-if="material==='None'" src="/assets/imgs/other/genshin_avatar_bg.png" :width="img_size" :height="img_size">
                       <img v-else-if="idx!==4" :src="`/assets/imgs/material/UI_ItemIcon_${material}.png`" :width="img_size" :height="img_size">
                       <div v-else>
                         <img :src="`/assets/imgs/material/UI_ItemIcon_${material}.png`" :width="img_size" :height="img_size">
-                        <div class="talent_wday">{{ talentIdToWday(material) }}</div>
+                        <div v-if="showWday" class="talent_wday">{{ talentIdToWday(material) }}</div>
                       </div>
                     </div>
                   </div>
