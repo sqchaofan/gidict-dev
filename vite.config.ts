@@ -6,6 +6,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/gidict-dev/",
   plugins: [
     vue(),
     VitePluginFonts({
@@ -24,10 +25,9 @@ export default defineConfig({
   server: {
     host: true
   },
-  base: "./",
   publicDir: "public",
   build: {
-    outDir: "docs"
+    outDir: "docs",
   },
   css: {
     modules: {
