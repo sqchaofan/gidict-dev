@@ -72,7 +72,7 @@ export default{
 </script>
 
 <template>
-  <div class="header">
+  <div class="header sticky-top">
     <div class="container-fluid">
       <div class="row row-cols-auto align-items-center">
         <div class="col-auto me-auto">
@@ -105,14 +105,21 @@ export default{
       </div>
     </div>
   </div>
-  
-  <div class="mainpage">
+
+  <div class="mainpage py-3">
     <CharaList v-if="page==='main'" :showWday="cfg.showWday" />
     <ChangeLog v-if="page==='changelog'" />
     <Config v-if="page==='config'" :devMode="cfg.devMode" :showWday="cfg.showWday" @resCfg="resCfg" />
     <ToolPage v-if="page==='tool'" />
     <Todo v-if="page==='todo'" />
   </div>
+
+  <footer class="bottom-100 p-3">
+    当サイトは非公式のファンサイトであり、開発元のHoYoverseとは関係ありません。
+    <br />
+    当サイトにて使用されている画像等の著作権は、COGNOSPHERE PTE. LTD. が保有します。
+
+  </footer>
 </template>
 
 <style lang="scss">
@@ -123,10 +130,20 @@ export default{
   box-shadow: inset 0px -6px $bg-light-color;
 }
 
+footer{
+  font-size: 13px;
+  background-color: $bg-strong-color;
+  color:$text-color;
+  box-shadow: inset 0px 6px $bg-light-color;
+  @media screen and (min-width: 768px){
+    font-size: 15px;
+  }
+}
+
 .mainpage{
-  padding: 6px 0px;
   background-color: $bg-color;
   color: $text-color;
+  min-height: 85vh;
 }
 
 </style>

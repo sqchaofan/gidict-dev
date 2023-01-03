@@ -26,8 +26,8 @@ export default{
                 "稲妻":{"name":"稲妻", "checked": true},
                 "稲妻":{"name":"稲妻", "checked": true},
                 "スメール":{"name":"スメール", "checked": true},
-                "ナタ":{"name":"ナタ", "checked": true},
                 "フォンテーヌ":{"name":"フォンテーヌ", "checked": true},
+                "ナタ":{"name":"ナタ", "checked": true},
                 "スネージナヤ":{"name":"スネージナヤ", "checked": true},
                 "その他":{"name":"その他", "checked": true}
             },
@@ -112,7 +112,7 @@ export default{
 </script>
 
 <template>
-  <div class="container-xl position-relative">
+  <div class="container-xl">
     <div class="row align-items-center gx-2">
       <div class="col-xs-12 col-sm-auto">
         <button type="button" class="btn btnx-gv-yellow" data-bs-toggle="modal" data-bs-target="#filterModal">
@@ -131,8 +131,8 @@ export default{
         <thead>
           <tr>
             <th scope="col" style="width: 64px">画像</th>
-            <th scope="col" style="width: 25%">名前</th>
-            <th scope="col" style="width: 12%">武器</th>
+            <th scope="col" style="width: 23%">名前</th>
+            <th scope="col" style="width: 14%">武器</th>
             <th scope="col">育成素材</th>
           </tr>
         </thead>

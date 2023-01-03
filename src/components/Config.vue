@@ -16,6 +16,8 @@ export default{
 
 <template>
     <div class="container-xl">
+        <h3>設定</h3>
+        <hr />
         <div class="form-check col">
             <input v-model="cfgs_showWday" class="form-check-input" type="checkbox" value="" id="cfgs_showWday" :checked="cfgs_showWday">
             <label class="form-check-label" for="cfgs_showWday">

@@ -345,16 +345,16 @@
         "name_en": "Beidou",
         "name_img": "Beidou",
         "weapon": "両手剣",
-        "element_en": "anemo",
+        "element_en": "electro",
         "country": "璃月",
         "birthday": "2月14日",
         "materials":[
             "104144",
             "113002",
-            "100058",
-            "112040",
-            "104312",
-            "113007"
+            "100028",
+            "112037",
+            "104318",
+            "113005"
         ]
     },{
         "id": "1003",
