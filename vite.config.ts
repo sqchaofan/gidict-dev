@@ -26,6 +26,9 @@ export default defineConfig({
   },
   base: "./",
   publicDir: "public",
+  build: {
+    outDir: "docs"
+  },
   css: {
     modules: {
       scopeBehaviour: 'local',
