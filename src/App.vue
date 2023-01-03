@@ -20,7 +20,7 @@ export default{
       pageall:[
         {
           "name": "main",
-          "disp": "図鑑"
+          "disp": "早見表"
         },
         {
           "name": "changelog",
@@ -114,7 +114,7 @@ export default{
     <Todo v-if="page==='todo'" />
   </div>
 
-  <footer class="bottom-100 p-3">
+  <footer class="p-3">
     当サイトは非公式のファンサイトであり、開発元のHoYoverseとは関係ありません。
     <br />
     当サイトにて使用されている画像等の著作権は、COGNOSPHERE PTE. LTD. が保有します。

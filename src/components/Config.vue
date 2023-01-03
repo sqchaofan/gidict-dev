@@ -24,7 +24,7 @@ export default{
                 曜日限定素材にて曜日を表示する
             </label>
         </div>
-        <div class="form-check col">
+        <div class="form-check col" v-if="false">
             <input v-model="cfgs_devMode" class="form-check-input" type="checkbox" value="" id="cfgs_devMode" :checked="cfgs_devMode">
             <label class="form-check-label" for="cfgs_devMode">
                 開発者モードを有効にする
