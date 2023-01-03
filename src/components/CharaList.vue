@@ -139,13 +139,13 @@ export default{
         <tbody>
             <tr v-for="chr in chrDataFiltered">
                 <td>
-                  <img :src="`/assets/imgs/chara/UI_AvatarIcon_${chr.name_img}.png`" :width="img_size" :height="img_size">
+                  <img :src="`./assets/imgs/chara/UI_AvatarIcon_${chr.name_img}.png`" :width="img_size" :height="img_size">
                 </td>
                 <td>
                   <div v-if="this.windowWidth>=992">
                     <div class="row align-items-center row-cols-auto g-1">
                       <div class="col p-0 m-0">
-                        <img :src="`/assets/imgs/other/${chr.element_en}.png`" :width="img_size_sm" :height="img_size_sm">
+                        <img :src="`./assets/imgs/other/${chr.element_en}.png`" :width="img_size_sm" :height="img_size_sm">
                       </div>
                       <div class="col px-1 chr_name">{{ chr.name }}</div>
                     </div>
@@ -154,7 +154,7 @@ export default{
                   <div v-else-if="this.windowWidth>=576">
                     <div class="row align-items-center row-cols-auto g-1">
                       <div class="col p-0 m-0">
-                        <img :src="`/assets/imgs/other/${chr.element_en}.png`" :width="img_size_sm" :height="img_size_sm">
+                        <img :src="`./assets/imgs/other/${chr.element_en}.png`" :width="img_size_sm" :height="img_size_sm">
                       </div>
                       <b class="col px-1">{{ chr.name }}</b>
                     </div>
@@ -162,7 +162,7 @@ export default{
                   </div>
                   <div v-else>
                     <div class="chr_name_sm">
-                      <img :src="`/assets/imgs/other/${chr.element_en}.png`" :width="img_size_sm" :height="img_size_sm">
+                      <img :src="`./assets/imgs/other/${chr.element_en}.png`" :width="img_size_sm" :height="img_size_sm">
                       <br><b>{{ chr.name }}</b>
                     </div>
                   </div>
@@ -175,9 +175,9 @@ export default{
                   <div class="row row-cols-auto">
                     <div v-for="(material,idx) in chr.materials" class="col px-0 px-lg-2">
                       <img v-if="material==='None'" src="/assets/imgs/other/genshin_avatar_bg.png" :width="img_size" :height="img_size">
-                      <img v-else-if="idx!==4" :src="`/assets/imgs/material/UI_ItemIcon_${material}.png`" :width="img_size" :height="img_size">
+                      <img v-if="idx!==4" :src="`./assets/imgs/material/UI_ItemIcon_${material}.png`" :width="img_size" :height="img_size">
                       <div v-else>
-                        <img :src="`/assets/imgs/material/UI_ItemIcon_${material}.png`" :width="img_size" :height="img_size">
+                        <img :src="`./assets/imgs/material/UI_ItemIcon_${material}.png`" :width="img_size" :height="img_size">
                         <div v-if="showWday" class="talent_wday">{{ talentIdToWday(material) }}</div>
                       </div>
                     </div>

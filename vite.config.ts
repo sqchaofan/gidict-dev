@@ -19,7 +19,8 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '#': fileURLToPath(new URL('./public', import.meta.url))
     }
   },
   server: {
@@ -27,7 +28,7 @@ export default defineConfig({
   },
   publicDir: "public",
   build: {
-    outDir: "docs",
+    outDir: "docs"
   },
   css: {
     modules: {

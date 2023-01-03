@@ -126,7 +126,7 @@ export default{
                     </select>
                 </div>
                 <div class="col">
-                    <img v-if="selected.element_en" :src="`/assets/imgs/other/${selected.element_en}.png`" height="31">
+                    <img v-if="selected.element_en" :src="`./assets/imgs/other/${selected.element_en}.png`" height="31">
                 </div>
             </div>
             <div class="row row-cols-auto align-items-center gx-0">
