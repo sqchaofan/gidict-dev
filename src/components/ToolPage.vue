@@ -20,8 +20,17 @@ export default{
                 {"name":"炎", "value":"pyro"},
             ],
             countries: ["モンド","璃月","稲妻","スメール","フォンテーヌ","ナタ","スネージナヤ","カーンルイア","その他"],
+            last_id: {"モンド":"0000",
+                "璃月":"1000",
+                "稲妻":"2000",
+                "スメール":"3000",
+                "フォンテーヌ":"4000",
+                "ナタ":"5000",
+                "スネージナヤ":"6000",
+                "カーンルイア":"7000",
+                "その他":"8000"},
             selected:{
-                id: "",
+                id: "0000",
                 name:"",
                 name_en: "",
                 name_img: "",
@@ -34,18 +43,22 @@ export default{
         }
     },
     methods:{
-        async fetchAll() {
+        fetchAll() {
             this.materialDict = materialData;
             this.chrDict = chrData;
-            let previd = parseInt(this.chrDict[this.chrDict.length-1].id);
-            this.selected.id=String(previd+1).padStart(4,'0');
         },
+        setId(){
+            for(const chr of this.chrDict){
+                if(this.last_id[chr.country]<chr.id){
+                    this.last_id[chr.country] = chr.id
+                }
+            }
+            this.selected.id=this.nextIdStr(this.last_id_country(this.selected.country))
+        },
+        nextIdStr:(id)=>{return String(parseInt(id,10)+1).padStart(4,'0');},
         convert(){
             if(this.selected.name_img===""){
                 this.selected.name_img=this.selected.name_en;
-            }
-            if(this.selected.id===""){
-                this.selected.id=String(this.chrDict.length).padStart(4,'0');
             }
 
             this.res_text=this.doAddComma?",{\n":"{\n";
@@ -74,13 +87,14 @@ export default{
             }
             this.res_text += "\t]\n}";
 
-            const id_temp = parseInt(this.selected.id,10);
-            this.selected.id=String(id_temp+1).padStart(4,'0');
+            this.selected.id=this.nextIdStr(this.selected.id);
             this.selected.name_img="";
-        }
+        },
+        last_id_country(country){return this.last_id[country]}
     },
     mounted(){
         this.fetchAll();
+        this.setId();
     }
 }
 
@@ -148,6 +162,7 @@ export default{
                         </option>
                     </select>
                 </div>
+                <div class="col mx-1">last:{{last_id_country(selected.country)}}</div>
             </div>
         </div>
         素材名(スペースまたはタブ区切り, スプレッドシートからコピー可)

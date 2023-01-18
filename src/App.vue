@@ -30,10 +30,11 @@ export default{
           "disp": "設定"
         }
       ],
+      //表示するには、Config.Vueのv-ifをtrueにするか、cfg.devModeを直接変更する
       pageall_dev:[
         {
           "name": "tool",
-          "disp": "[dev]開発用ツール"
+          "disp": "[dev]ツール"
         },
         {
           "name": "todo",

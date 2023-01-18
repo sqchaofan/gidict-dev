@@ -578,6 +578,23 @@
             "113019"
         ]
     },{
+        "id": "1016",
+        "name": "ヨォーヨ",
+        "name_en": "Yaoyao",
+        "name_img": "Yaoyao",
+        "weapon": "長柄武器",
+        "element_en": "dendro",
+        "country": "璃月",
+        "birthday": "3月6日",
+        "materials":[
+            "104134",
+            "113040",
+            "100027",
+            "112004",
+            "104315",
+            "113043"
+        ]
+    },{
         "id": "2000",
         "name": "楓原万葉",
         "name_en": "Kaedehara Kazuha",
@@ -984,6 +1001,23 @@
             "112067",
             "104331",
             "113041"
+        ]
+    },{
+        "id": "3010",
+        "name": "アルハイゼン",
+        "name_en": "Alhaitham",
+        "name_img": "Alhaitham",
+        "weapon": "片手剣",
+        "element_en": "dendro",
+        "country": "スメール",
+        "birthday": "2月11日",
+        "materials":[
+            "104134",
+            "113044",
+            "101222",
+            "112067",
+            "104334",
+            "113042"
         ]
     },{
         "id": "6000",

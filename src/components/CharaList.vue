@@ -9,6 +9,7 @@ export default{
             //chr_data_filtered: null,
             img_size: "70",
             img_size_sm: "24",
+            img_size_sm2: "20",
             searchtext:'',
             searchtext_tmp:'',
             windowWidth:'',
@@ -39,6 +40,11 @@ export default{
                 "geo":{"name":"岩", "value":"geo", "checked": true},
                 "hydro":{"name":"水", "value":"hydro", "checked": true},
                 "pyro":{"name":"炎", "value":"pyro", "checked": true},
+            },
+            talentWdays: {
+                "月/木/日":{"name":"月/木", "checked": true},
+                "火/金/日":{"name":"火/金", "checked": true},
+                "水/土/日":{"name":"水/土", "checked": true}
             }
         }
     },
@@ -48,11 +54,8 @@ export default{
             if(this.windowWidth<768){
                 this.img_size=48;
                 this.img_size_sm=18;
-            }else if(this.windowWidth<992){
+            }else if(this.windowWidth<1200){
                 this.img_size=64;
-                this.img_size_sm=24;
-            }else{
-                this.img_size=70;
                 this.img_size_sm=24;
             }
         },
@@ -73,6 +76,32 @@ export default{
             };
             return idList[id];
         },
+        materialIdtoWBoss: (id)=>{
+            const idList={
+                "113003":"0000",
+                "113004":"0000",
+                "113005":"0000",
+                "113006":"0001",
+                "113007":"0001",
+                "113008":"0001",
+                "113013":"0002",
+                "113014":"0002",
+                "113015":"0002",
+                "113017":"0003",
+                "113018":"0003",
+                "113019":"0003",
+                "113025":"0004",
+                "113026":"0004",
+                "113027":"0004",
+                "113032":"0005",
+                "113033":"0005",
+                "113034":"0005",
+                "113041":"0006",
+                "113042":"0006",
+                "113043":"0006",
+            };
+            return idList[id];
+        },
         checkAll(dataDict){
           Object.keys(dataDict).forEach((t)=>{dataDict[t]["checked"]=true});
         },
@@ -89,13 +118,15 @@ export default{
             let chrData_tmp = [];
 
             this.chr_data.forEach(chr=>{
+                let wday = this.talentIdToWday(chr.materials[4])
                 if(Object.keys(this.weapons).indexOf(chr.weapon)!==-1&&
                     Object.keys(this.countries).indexOf(chr.country)!==-1&&
                     Object.keys(this.elementals).indexOf(chr.element_en)!==-1
                 ){
                     if(this.weapons[chr.weapon].checked && 
                         this.elementals[chr.element_en].checked&&
-                        this.countries[chr.country].checked
+                        this.countries[chr.country].checked&&
+                        this.talentWdays[wday].checked
                     )chrData_tmp.push(chr);
                 }
                 
@@ -175,11 +206,17 @@ export default{
                   <div class="row row-cols-auto">
                     <div v-for="(material,idx) in chr.materials" class="col px-0 px-lg-2">
                       <img v-if="material==='None'" src="/assets/imgs/other/genshin_avatar_bg.png" :width="img_size" :height="img_size">
-                      <img v-if="idx!==4" :src="`./assets/imgs/material/UI_ItemIcon_${material}.png`" :width="img_size" :height="img_size">
-                      <div v-else>
+                      <div v-if="idx===4" class="sub_wrapper">
                         <img :src="`./assets/imgs/material/UI_ItemIcon_${material}.png`" :width="img_size" :height="img_size">
-                        <div v-if="showWday" class="talent_wday">{{ talentIdToWday(material) }}</div>
+                        <span v-if="showWday" class="sub_text sub_item">{{ talentIdToWday(material) }}</span>
                       </div>
+                      <div v-else-if="idx===5" class="sub_wrapper">
+                        <span v-if="showWday" class="sub_icon sub_item">
+                          <img :src="`./assets/imgs/liveBeings/WeeklyBossIcon_${materialIdtoWBoss(material)}.png`" :width="img_size_sm2" :height="img_size_sm2"/>
+                        </span>
+                        <img :src="`./assets/imgs/material/UI_ItemIcon_${material}.png`" :width="img_size" :height="img_size">
+                      </div>
+                      <img v-else :src="`./assets/imgs/material/UI_ItemIcon_${material}.png`" :width="img_size" :height="img_size">
                     </div>
                   </div>
                 </td>
@@ -238,6 +275,20 @@ export default{
               </div>
             </div>
           </div>
+          <!-- 天賦育成素材 -->
+          <div id="filterTalent">
+            <div class="row row-cols-auto align-items-center">
+              <h6 class="col m-0">天賦素材(曜日)</h6>
+              <button @click="checkAll(talentWdays)" class="col btn btn-sm btnx-gv-blue py-0 round-group-left" style="font-size:12px;">全選択</button>
+              <button @click="uncheckAll(talentWdays)" class="col btn btn-sm btnx-gv-red py-0 round-group-right" style="font-size:12px;">全解除</button>
+            </div>
+            <div class="row row-cols-auto align-items-center gx-2 py-2">
+              <div v-for="item,name,idx in talentWdays" class="px-1">
+                <input v-model="item.checked" type="checkbox" class="btn-check" :id="`btn-talent-${idx}`" autocomplete="off" :checked="item.checked">
+                <label class="btn btnx-clear-gv-gray" :for="`btn-talent-${idx}`">{{ item.name }}</label>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btnx-gv-blue" data-bs-dismiss="modal">Close</button>
@@ -252,18 +303,39 @@ export default{
     font-size: 20px;
     font-weight: bold;
 }
-.talent_wday{
-    margin: -24px 0px 0px; 
+
+.sub_item{
+  position: absolute;
+}
+
+.sub_wrapper{
+  position: relative;
+}
+
+.sub_text{
+    margin: auto;
     font-size: 14px; 
     text-align: center;
     background-color: #fff3;
     border-radius: 0.125rem;
     user-select: none;
+    left: 0;
+    right: 0;
+    bottom: 1px;
 
     @media screen and (max-width: 991px) {
-        margin: -18px 0px 0px; 
         font-size: 11px;
     }
+}
+
+.sub_icon{
+  font-size: 0px;
+  left: 1px;
+  bottom: 1px;
+  background-color: #fff3;
+  border-radius: 0.125rem;
+  user-select: none;
+  padding: 1px;
 }
 
 </style>
